@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas y Tablas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Listas y Tablas</h1>
+
+    <h2 >Listas no Ordenadas</h2>
+    <p>Las listas no ordenadas se utilizan para crear listas con viñetas. Se define utilizando la etiqueta <code>&lt;ul&gt;</code> para la lista y <code>&lt;li&gt;</code> para cada elemento.</p>
+    <pre><code>&lt;ul&gt;<br>
+    &lt;li&gt;Elemento 1&lt;/li&gt;<br>
+    &lt;li&gt;Elemento 2&lt;/li&gt;<br>
+    &lt;li&gt;Elemento 3&lt;/li&gt;<br>
+&lt;/ul&gt;</code></pre>
+
+    <h2>Listas Ordenadas</h2>
+    <p>Las listas ordenadas se utilizan para crear listas numeradas. Se define utilizando la etiqueta <code>&lt;ol&gt;</code> para la lista y <code>&lt;li&gt;</code> para cada elemento.</p>
+    <pre><code>&lt;ol&gt;<br>
+    &lt;li&gt;Primer elemento&lt;/li&gt;<br>
+    &lt;li&gt;Segundo elemento&lt;/li&gt;<br>
+    &lt;li&gt;Tercer elemento&lt;/li&gt;<br>
+&lt;/ol&gt;</code></pre>
+
+    <h2>Listas de Definición</h2>
+    <p>Las listas de definición se utilizan para definir términos. Se define utilizando la etiqueta <code>&lt;dl&gt;</code> para la lista, <code>&lt;dt&gt;</code> para el término y <code>&lt;dd&gt;</code> para la definición.</p>
+    <pre><code>&lt;dl&gt;<br>
+    &lt;dt&gt;Término 1&lt;/dt&gt;<br>
+    &lt;dd&gt;Definición del término 1.&lt;/dd&gt;<br>
+    &lt;dt&gt;Término 2&lt;/dt&gt;<br>
+    &lt;dd&gt;Definición del término 2.&lt;/dd&gt;<br>
+&lt;/dl&gt;</code></pre>
+
+    <h2>Tablas</h2>
+    <p>Las tablas se utilizan para organizar datos en filas y columnas. Se define utilizando la etiqueta <code>&lt;table&gt;</code>, con <code>&lt;tr&gt;</code> para las filas, <code>&lt;th&gt;</code> para los encabezados de columna y <code>&lt;td&gt;</code> para las celdas de datos.</p>
+    <pre><code>&lt;table&gt;<br>
+    &lt;tr&gt;<br>
+        &lt;th&gt;Encabezado 1&lt;/th&gt;<br>
+        &lt;th&gt;Encabezado 2&lt;/th&gt;<br>
+    &lt;/tr&gt;<br>
+    &lt;tr&gt;<br>
+        &lt;td&gt;Dato 1&lt;/td&gt;<br>
+        &lt;td&gt;Dato 2&lt;/td&gt;<br>
+    &lt;/tr&gt;<br>
+&lt;/table&gt;</code></pre>
+
+    <h2>Fusionar y Dividir Celdas</h2>
+    <p>Para fusionar celdas en una tabla, se utilizan los atributos <code>colspan</code> y <code>rowspan</code>. El primero se utiliza para fusionar celdas horizontalmente, y el segundo para fusionarlas verticalmente.</p>
+    <pre><code>&lt;table&gt;<br>
+    &lt;tr&gt;<br>
+        &lt;td colspan="2"&gt;Celda fusionada&lt;/td&gt;<br>
+    &lt;/tr&gt;<br>
+    &lt;tr&gt;<br>
+        &lt;td&gt;Dato 1&lt;/td&gt;<br>
+        &lt;td rowspan="2"&gt;Celda dividida&lt;/td&gt;<br>
+    &lt;/tr&gt;<br>
+    &lt;tr&gt;<br>
+        &lt;td&gt;Dato 2&lt;/td&gt;<br>
+    &lt;/tr&gt;<br>
+&lt;/table&gt;</code></pre>
+
+    <h2>Formateado Avanzado de Tablas</h2>
+    <p>Para un formateo avanzado de tablas, se pueden aplicar estilos CSS a las tablas, filas, celdas y encabezados. Esto permite personalizar el diseño de las tablas, como el color de fondo, bordes y espaciado.</p>
+    <pre><code>table {<br>
+    border-collapse: collapse;<br>
+}<br>
+th, td {<br>
+    border: 1px solid black;<br>
+    padding: 8px;<br>
+    text-align: left;<br>
+}</code></pre>
+
+</body>
+</html>

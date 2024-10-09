@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces y Imágenes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Enlaces y Imágenes</h1>
+
+    <h2>Hipervínculos</h2>
+    <p>Los hipervínculos son elementos en una página web que permiten navegar a otra página o a una sección específica dentro de la misma. Se pueden crear enlaces internos (a otras páginas dentro del mismo sitio) y externos (a páginas en otros sitios).</p>
+    <pre><code>&lt;a href="URL"&gt;Texto del enlace&lt;/a&gt;</code></pre>
+
+    <h2>Imágenes</h2>
+    <p>Para insertar una imagen en HTML, se utiliza la etiqueta <code>&lt;img&gt;</code>. Los atributos principales son:</p>
+    <ul>
+        <li><code>src</code>: Especifica la ruta de la imagen.</li>
+        <li><code>alt</code>: Proporciona un texto alternativo para la imagen, importante para la accesibilidad.</li>
+        <li><code>width</code>: Define el ancho de la imagen (en píxeles o porcentajes).</li>
+        <li><code>height</code>: Define la altura de la imagen (en píxeles o porcentajes).</li>
+    </ul>
+    <pre><code>&lt;img src="ruta_de_la_imagen" alt="Descripción de la imagen" width="200" height="150"&gt;</code></pre>
+
+    <h2>Mapas de Imagen</h2>
+    <p>Los mapas de imagen permiten crear áreas interactivas dentro de una imagen. Se utilizan las etiquetas <code>&lt;map&gt;</code> y <code>&lt;area&gt;</code> para definir las zonas activas y sus enlaces.</p>
+    <pre><code>&lt;img src="imagen.jpg" usemap="#mapa"&gt;<br>
+&lt;map name="mapa"&gt;<br>
+    &lt;area shape="rect" coords="34,44,270,350" href="enlace.html" alt="Descripción"&gt;<br>
+&lt;/map&gt;</code></pre>
+
+    <h2>Imágenes como Enlaces</h2>
+    <p>Las imágenes también se pueden utilizar como enlaces. Para ello, se coloca la etiqueta <code>&lt;img&gt;</code> dentro de un hipervínculo.</p>
+    <pre><code>&lt;a href="enlace.html"&gt;&lt;img src="imagen.jpg" alt="Descripción"&gt;&lt;/a&gt;</code></pre>
+
+    <h2>Optimización de Imágenes</h2>
+    <p>Optimizar imágenes es crucial para mejorar el rendimiento de una página web. Aquí algunos consejos:</p>
+    <ul>
+        <li>Usar formatos de imagen adecuados (JPEG, PNG, WebP).</li>
+        <li>Comprimir imágenes para reducir su tamaño sin perder calidad.</li>
+        <li>Especificar dimensiones de imágenes para mejorar el tiempo de carga.</li>
+        <li>Utilizar atributos <code>alt</code> para mejorar la accesibilidad y SEO.</li>
+    </ul>
+
+</body>
+</html>

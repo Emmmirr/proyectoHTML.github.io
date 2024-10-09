@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Comentario" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta HTML &lt;label></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        video {
+            grid-column: 1 / span 2;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .container {
+            margin-top: 50px;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        h1 {
+            background-color: #34495e;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-family: "Protest Guerrilla"
+        }
+
+        h2 {
+            font-family: "Playpen Sans", cursive;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+
+        h3 {
+            font-family: "Nanum Myeongjo";
+            font-weight: 400;
+            font-style: normal;
+            color: #968771;
+        }
+
+        p {
+            font-family: "Roboto Mono";
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: italic;
+        }
+
+        ol {
+            font-family: "Roboto Mono";
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: italic;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .example-section {
+            background-color: #1f4068;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .example-section h2 {
+            margin-bottom: 10px;
+        }
+
+        pre {
+            background-color: #0f3460;
+            padding: 15px;
+            border-radius: 5px;
+            color: #fcfbfa;
+        }
+
+        .run-button {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        body {
+    margin: 0;
+    background-color: #27264B;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Fondo del video detrás del contenido */
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #1B1938; /* Fondo oscuro */
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Espacio entre el logo y los elementos del menú */
+    align-items: center; /* Alinear verticalmente los elementos */
+    position: fixed; /* Mantener la barra de navegación en su lugar */
+    top: 0; /* Colocar la barra de navegación en la parte superior */
+    z-index: 1000; /* Asegurar que la barra esté por encima del contenido */
+}
+
+.logo {
+    margin-left: 10px; /* Ajuste de margen izquierdo para el logo */
+}
+
+.logo img {
+    height: 50px; /* Ajusta el tamaño del logo */
+}
+
+.menu {
+    display: flex;
+    margin-right: 10px; /* Ajuste de margen derecho para el menú */
+}
+
+.menu-item {
+    display: inline-block;
+    color: #A7ABC8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background-color: rgb(9, 0, 51);
+    color: white; /* Cambia el color al pasar el mouse */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 50px; /* Deja espacio para la barra de navegación */
+    overflow-y: auto; /* Evitar el scroll en el contenedor */
+    height: calc(100vh - 50px); /* Altura total menos la barra de navegación */
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    padding: 20px; /* Espaciado interno */
+    flex: 1; /* Ocupa el resto del espacio */
+    overflow-y: auto; /* Permitir desplazamiento si el contenido es largo */
+    background-color: #27264B; /* Color de fondo para el contenido principal */
+}
+    </style>
+</head>
+
+<body>
+
+    <ul class="navbar">
+        <li class="logo">
+        <a href="index.html">
+            <img src="html5.png" alt="Logo">
+        </a>
+
+        </li> <!-- Logo a la izquierda -->
+        <div class="menu"> <!-- Contenedor para los elementos del menú -->
+            <a href="htmlPag.html" class="menu-item">HTML</a>
+            <a href="cssPag.html" class="menu-item">CSS</a>
+        </div>
+
+        <div class="wave"></div>
+    </ul>
+
+
+    <video onloadstart="this.muted=true" autoplay loop>
+        <source src="https://videos.pexels.com/video-files/17564212/17564212-uhd_2560_1440_30fps.mp4">
+    </video>
+
+    <div class="container">
+        <h1>Etiqueta HTML &lt;label&gt;</h1>
+
+        <div class="nav-buttons">
+            <a href="http://127.0.0.1:5500/Elementos.html">Anterior</a>
+        </div>
+
+        <div class="example-section">
+            <h2>Ejemplo</h2>
+            <p>Tres botones de opción con etiquetas:</p>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;style&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The label element&lt;/h1&gt;
+
+&lt;p&gt;Click on one of the text labels to 
+toggle the related radio button:&lt;/p&gt;
+
+&lt;form action="/action_page.php"&gt;
+&lt;input type="radio" id="html" 
+name="fav_language" value="HTML"&gt;
+&lt;label for="html">HTML&lt;/label&gt;&lt;br&gt;
+&lt;input type="radio" id="css" 
+name="fav_language" value="CSS"&gt;
+&lt;label for="css">CSS&lt;/label&gt;&lt;br&gt;
+&lt;input type="radio" id="javascript" 
+name="fav_language" value="JavaScript&gt;
+&lt;label
+for="javascript">JavaScript
+&lt;/label&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <br>
+            <h3>Definición y uso</h3>
+            <p style="color: #c6ccd5;"> La &lt;label&gt; etiqueta define una etiqueta para varios elementos:
+                <br><br>
+                <ul style="color: #c6ccd5;">
+                    <li>&lt;input type="checkbox"&gt;</li>
+                    <li>&lt;input type="color"&gt;</li>
+                    <li>&lt;input type="date"&gt;</li>
+                    <li>&lt;input type="datetime-local"&gt;</li>
+                    <li>&lt;input type="email"<&gt;/li>
+                    <li>&lt;input type="file"&gt;</li>
+                    <li>&lt;input type="month"&gt;</li>
+                    <li>&lt;input type="number"&gt;</li>
+                    <li>&lt;input type="password"&gt;</li>
+                    <li>&lt;input type="radio"&gt;</li>
+                    <li>&lt;input type="range"&gt;</li>
+                    <li>&lt;input type="tel"&gt;</li>
+                    <li>&lt;input type="text"&gt;</li>
+                    <li>&lt;input type="time"&gt;</li>
+                    <li>&lt;input type="url"&gt;</li>
+                    <li>&lt;input type="week"&gt;</li>
+                    <li>&lt;meter"&gt;</li>
+                    <li>&lt;progress&gt;</li>
+                    <li>&lt;select&gt;</li>
+                    <li>&lt;textarea&gt;</li>
+                </ul>
+                El uso adecuado de las etiquetas con los elementos anteriores beneficiará:
+                <ul style="color: #c6ccd5;">
+                    <li>Usuarios de lectores de pantalla (leerán en voz alta la etiqueta cuando el usuario esté enfocado en el elemento)</li>
+                    <li>Usuarios que tienen dificultades para hacer clic en regiones muy pequeñas (como casillas de verificación), porque cuando un usuario hace clic en el texto dentro del &lt;label&gt; elemento, alterna la entrada (esto aumenta el área afectada).</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

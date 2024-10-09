@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Avanzado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CSS Avanzado</h1>
+
+    <h2>Preprocesadores CSS</h2>
+    <p>Los preprocesadores como SASS y LESS permiten utilizar características avanzadas en CSS. Ejemplo en SASS:</p>
+    <pre><code>$color-primario: #3498db;
+
+    body {
+        background-color: $color-primario;
+    }</code></pre>
+
+    <h2>Variables en CSS</h2>
+    <p>Las variables CSS permiten almacenar valores que se pueden reutilizar en el código. Ejemplo:</p>
+    <pre><code>:root {
+        --color-primario: #3498db;
+    }
+
+    body {
+        background-color: var(--color-primario);
+    }</code></pre>
+
+    <h2>Funciones en CSS</h2>
+    <p>CSS permite usar funciones como <code>calc()</code> para realizar cálculos. Ejemplo:</p>
+    <pre><code>div {
+        width: calc(100% - 20px);
+    }</code></pre>
+
+    <h2>Filtros CSS</h2>
+    <p>Los filtros permiten aplicar efectos visuales a imágenes y elementos. Ejemplo:</p>
+    <pre><code>img {
+        filter: grayscale(100%);
+    }</code></pre>
+
+    <h2>Clip-path</h2>
+    <p>La propiedad <code>clip-path</code> permite crear formas personalizadas. Ejemplo:</p>
+    <pre><code>div {
+        clip-path: circle(50%);
+    }</code></pre>
+</body>
+</html>

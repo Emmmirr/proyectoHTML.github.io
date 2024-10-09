@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia en HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Multimedia en HTML</h1>
+
+    <h2>Inserción de Imágenes</h2>
+    <p>Las imágenes se insertan en una página HTML utilizando la etiqueta <code>&lt;img&gt;</code>. Se deben especificar los atributos <code>src</code> (fuente) y <code>alt</code> (texto alternativo).</p>
+    <pre><code>&lt;img src="ruta_de_la_imagen.jpg" alt="Descripción de la imagen"&gt;</code></pre>
+
+    <h2>Uso de Vídeos</h2>
+    <p>Los vídeos se pueden incluir usando la etiqueta <code>&lt;video&gt;</code>. Es importante incluir atributos como <code>controls</code> para que el usuario pueda reproducir el vídeo.</p>
+    <pre><code>&lt;video controls&gt;<br>
+    &lt;source src="ruta_del_video.mp4" type="video/mp4"&gt;<br>
+    Tu navegador no soporta la etiqueta de video.<br>
+    &lt;/video&gt;</code></pre>
+
+    <h2>Audio</h2>
+    <p>El audio se inserta utilizando la etiqueta <code>&lt;audio&gt;</code>. Al igual que con el vídeo, el atributo <code>controls</code> permite a los usuarios controlar la reproducción.</p>
+    <pre><code>&lt;audio controls&gt;<br>
+    &lt;source src="ruta_del_audio.mp3" type="audio/mpeg"&gt;<br>
+    Tu navegador no soporta la etiqueta de audio.<br>
+    &lt;/audio&gt;</code></pre>
+
+    <h2>Integración de Iframes</h2>
+    <p>Los iframes permiten incrustar otra página web dentro de la página actual. Se utiliza la etiqueta <code>&lt;iframe&gt;</code>.</p>
+    <pre><code>&lt;iframe src="url_de_la_pagina" width="600" height="400"&gt;&lt;/iframe&gt;</code></pre>
+
+    <h2>Optimización de Multimedia</h2>
+    <p>Para mejorar el rendimiento de las imágenes y vídeos, se recomienda:</p>
+    <ul>
+        <li>Utilizar formatos adecuados (como WebP para imágenes).</li>
+        <li>Comprimir imágenes antes de subirlas.</li>
+        <li>Usar atributos <code>width</code> y <code>height</code> para establecer dimensiones.</li>
+    </ul>
+
+</body>
+</html>

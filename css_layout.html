@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Diseño y Layout</h1>
+
+    <h2>Modelo de Caja</h2>
+    <p>El modelo de caja describe cómo se comportan los elementos en CSS. Cada elemento se considera una caja con márgenes, bordes, rellenos y contenido. Ejemplo:</p>
+    <pre><code>div {
+        margin: 20px;
+        border: 2px solid black;
+        padding: 15px;
+        width: 300px;
+    }</code></pre>
+    <p>Esto define un <code>div</code> con márgenes de 20 píxeles, borde de 2 píxeles, relleno de 15 píxeles y un ancho de 300 píxeles.</p>
+
+    <h2>Flexbox</h2>
+    <p>Flexbox es un modelo de diseño que permite alinear y distribuir espacio entre elementos. Ejemplo:</p>
+    <pre><code>.container {
+        display: flex;
+        justify-content: space-between;
+    }</code></pre>
+    <p>Esto configura un contenedor flex que distribuye el espacio entre sus elementos hijos.</p>
+
+    <h2>Grid</h2>
+    <p>Grid es un sistema de diseño bidimensional. Ejemplo:</p>
+    <pre><code>.grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }</code></pre>
+    <p>Esto crea un contenedor de cuadrícula con 3 columnas de igual ancho.</p>
+
+    <h2>Posicionamiento</h2>
+    <p>El posicionamiento en CSS permite controlar la ubicación de un elemento. Ejemplo:</p>
+    <pre><code>div {
+        position: absolute;
+        top: 50px;
+        left: 100px;
+    }</code></pre>
+    <p>Esto posiciona el <code>div</code> a 50 píxeles desde la parte superior y 100 píxeles desde la izquierda.</p>
+
+    <h2>Media Queries</h2>
+    <p>Las media queries permiten aplicar estilos CSS según el tamaño de la pantalla. Ejemplo:</p>
+    <pre><code>@media (max-width: 600px) {
+        body {
+            background-color: lightblue;
+        }
+    }</code></pre>
+    <p>Esto cambia el color de fondo a azul claro en pantallas de 600 píxeles o menos.</p>
+</body>
+</html>

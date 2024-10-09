@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia y Animaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Multimedia y Animaciones</h1>
+
+    <h2>Imágenes y Videos</h2>
+    <p>Se pueden insertar imágenes y videos en una página web utilizando las etiquetas <code>&lt;img&gt;</code> y <code>&lt;video&gt;</code>. Ejemplo:</p>
+    <pre><code>&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;</code></pre>
+    <pre><code>&lt;video controls&gt;
+        &lt;source src="video.mp4" type="video/mp4"&gt;
+        Tu navegador no soporta el video.
+    &lt;/video&gt;</code></pre>
+
+    <h2>Animaciones en CSS</h2>
+    <p>Las animaciones en CSS permiten crear efectos visuales al cambiar propiedades CSS. Ejemplo:</p>
+    <pre><code>@keyframes ejemplo {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    div {
+        animation: ejemplo 2s ease-in-out;
+    }</code></pre>
+
+    <h2>Transiciones</h2>
+    <p>Las transiciones permiten cambiar suavemente una propiedad CSS de un estado a otro. Ejemplo:</p>
+    <pre><code>div {
+        transition: background-color 0.5s ease;
+    }
+
+    div:hover {
+        background-color: yellow;
+    }</code></pre>
+
+    <h2>Transformaciones</h2>
+    <p>Las transformaciones permiten aplicar efectos como rotaciones. Ejemplo:</p>
+    <pre><code>div {
+        transform: rotate(45deg);
+    }</code></pre>
+
+    <h2>Uso de Iframes</h2>
+    <p>Los iframes permiten insertar contenido de otras páginas web dentro de un documento. Ejemplo:</p>
+    <pre><code>&lt;iframe src="https://www.ejemplo.com" width="300" height="200"&gt;&lt;/iframe&gt;</code></pre>
+</body>
+</html>

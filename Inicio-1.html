@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InicioHTML</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+            text-align: center;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .contenido {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            margin: 200px;
+        }
+
+        .texto {
+            flex: 1;
+            text-align: justify;
+            margin-right: 40px; 
+        }
+
+        .imagen {
+            width: 360px;
+            height: 360px;
+        }
+
+        h1, h2 {
+            color: #333;
+            transition: font-size 0.3s, transform 0.3s;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        /* Contenedor para centrar el contenido */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #a0c5f7;
+            padding: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Estilos para los bloques de código */
+        .code-block {
+            background-color: #f7f9fc;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-family: monospace;
+            text-align: left;
+            overflow-x: auto;
+        }
+
+        /* Para centrar y ajustar el contenedor */
+        .code-block pre {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <video onloadstart="this.muted=true" autoplay loop>
+        <source src="https://videos.pexels.com/video-files/5649205/5649205-uhd_2560_1440_25fps.mp4">
+    </video>
+
+    <div class="container">
+        <h1 class="scroll-scale">📚 La Estructura Básica de HTML</h1>
+        <p>HTML es el lenguaje de marcado que define la estructura de las páginas web. A continuación, aprenderás los elementos clave que componen un documento HTML.</p>
+
+        <h2 class="scroll-scale">1️⃣ La Declaración del Tipo de Documento</h2>
+        <p>Esta línea le indica al navegador que estamos usando HTML5:</p>
+  
+        <div class="code-block">
+            <pre>&lt;!DOCTYPE html&gt;</pre>
+        </div>
+        
+        <h2 class="scroll-scale">2️⃣ La Etiqueta <code>&lt;html&gt;</code>: El Contenedor Principal</h2>
+        <p>La etiqueta <code>&lt;html&gt;</code> contiene todo el contenido de la página. En este caso, también indicamos el idioma:</p>
+        <div class="code-block">
+            <pre>&lt;html lang="es"&gt;<br>  ...contenido aquí...<br>&lt;/html&gt;</pre>
+        </div>
+        
+        <h2 class="scroll-scale">3️⃣ La Sección <code>&lt;head&gt;</code>: El Corazón Invisible de la Página</h2>
+        <p>Aquí es donde incluimos metadatos y enlaces importantes como las hojas de estilo o el título de la página:</p>
+ 
+        <div class="code-block">
+            <pre>&lt;head&gt;<br>  &lt;meta charset="UTF-8"&gt;<br>  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>  &lt;title&gt;Mi Página de Ejemplo&lt;/title&gt;<br>  &lt;link rel="stylesheet" href="style.css"&gt;<br>&lt;/head&gt;</pre>
+        </div>
+
+        <h2 class="scroll-scale">4️⃣ La Sección <code>&lt;body&gt;</code>: El Contenido Visible</h2>
+        <p>Todo lo que el usuario ve está dentro del <code>&lt;body&gt;</code>. Aquí es donde incluimos los títulos, párrafos, imágenes, enlaces, etc.:</p>
+        <div class="code-block">
+            <pre>&lt;body&gt;<br>  &lt;h1&gt;Bienvenidos a Mi Página&lt;/h1&gt;<br>  &lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;<br>&lt;/body&gt;</pre>
+        </div>
+
+        <h2 class="scroll-scale">5️⃣ Comentarios en HTML</h2>  
+        <p>Para dejar anotaciones en el código sin que aparezcan en la página, utilizamos comentarios:</p>
+        <div class="code-block">
+            <pre>&lt;!-- Este es un comentario en HTML --&gt;</pre>
+        </div>
+        
+        <h2>Resumen</h2>
+        <p>La estructura básica de un documento HTML está compuesta por varios elementos clave como <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, y <code>&lt;body&gt;</code>. Esto es lo que le permite a los navegadores leer e interpretar la página correctamente.</p>
+    </div>
+
+    <h1>Ejeccicios: </h1>
+    <div class="video-container">
+        <iframe width="695" height="391" src="https://www.youtube.com/embed/QwMlgfMK6fQ?list=PLJubkp8BnTJtjPikTnv8JoYWKFjUu7bRH" title="🛑Curso HTML - #01 INTRODUCCIÓN 🖥️" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="695" height="391" src="https://www.youtube.com/embed/GucaPbn9Cf8?list=PLJubkp8BnTJtjPikTnv8JoYWKFjUu7bRH" title="🛑 #02 QUÉ SON LAS ETIQUETAS 🖥️ - Curso HTML" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="695" height="391" src="https://www.youtube.com/embed/uphhHrkRLQA?list=PLJubkp8BnTJtjPikTnv8JoYWKFjUu7bRH" title="🛑 #03 CÓMO CREAR ENLACES - Curso HTML 🖥️" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="695" height="391" src="https://www.youtube.com/embed/TWeV5D9RHg0?list=PLJubkp8BnTJtjPikTnv8JoYWKFjUu7bRH" title="🛑 #04 CÓMO CREAR LISTAS -  Curso HTML 🖥️" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="695" height="391" src="https://www.youtube.com/embed/57kj8mKpDV8?list=PLJubkp8BnTJtjPikTnv8JoYWKFjUu7bRH" title="🛑 #05 CÓMO INSERTAR IMÁGENES - Curso HTML 🖥️" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="695" height="391" src="https://www.youtube.com/embed/wkmTHJFMbdI?list=PLJubkp8BnTJtjPikTnv8JoYWKFjUu7bRH" title="🛑 #06 CÓMO CREAR TABLAS - Curso HTML 🖥️" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="695" height="391" src="https://www.youtube.com/embed/cX7Pml5ZM84?list=PLJubkp8BnTJtjPikTnv8JoYWKFjUu7bRH" title="🛑 #07 CÓMO CREAR FORMULARIOS - Curso HTML 🖥️" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="695" height="391" src="https://www.youtube.com/embed/V5WqZa6KkW8?list=PLJubkp8BnTJtjPikTnv8JoYWKFjUu7bRH" title="🛑 #08 CÓMO CREAR UNA TABLA DE CONTENIDOS - Curso HTML 🖥️" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        document.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const scaleFactor = Math.max(1 - scrollY / 1000, 0.5);
+            const titles = document.querySelectorAll('.scroll-scale');
+            titles.forEach(title => {
+                title.style.transform = `scale(${scaleFactor})`;
+            });
+        });
+    </script>
+</body>
+</html>

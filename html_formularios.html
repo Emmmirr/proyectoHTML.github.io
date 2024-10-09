@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <h2>Estructura de un Formulario</h2>
+    <p>Un formulario se define utilizando la etiqueta <code>&lt;form&gt;</code>. Este elemento permite recoger datos del usuario que se pueden enviar a un servidor.</p>
+    <pre><code>&lt;form action="ruta_a_la_accion" method="post"&gt;<br>
+    &lt;!-- Campos del formulario --&gt;<br>
+    &lt;/form&gt;</code></pre>
+
+    <h2>Campos de Entrada</h2>
+    <p>Los campos de entrada permiten al usuario ingresar datos. Algunos de los tipos más comunes son:</p>
+    <ul>
+        <li><code>&lt;input type="text"&gt;</code>: Campo de texto simple.</li>
+        <li><code>&lt;input type="password"&gt;</code>: Campo de entrada de contraseña, donde los caracteres son ocultados.</li>
+        <li><code>&lt;textarea&gt;</code>: Área de texto que permite la entrada de múltiples líneas.</li>
+    </ul>
+    <pre><code>&lt;input type="text" name="nombre"&gt;<br>
+&lt;input type="password" name="contrasena"&gt;<br>
+&lt;textarea name="comentarios"&gt;&lt;/textarea&gt;</code></pre>
+
+    <h2>Botones</h2>
+    <p>Los botones en un formulario permiten enviar o reiniciar datos. Los tipos más comunes son:</p>
+    <ul>
+        <li><code>&lt;input type="submit"&gt;</code>: Envía el formulario.</li>
+        <li><code>&lt;input type="reset"&gt;</code>: Reinicia los campos del formulario a sus valores por defecto.</li>
+        <li><code>&lt;button&gt;</code>: Permite crear botones personalizados con contenido HTML.</li>
+    </ul>
+    <pre><code>&lt;input type="submit" value="Enviar"&gt;<br>
+&lt;input type="reset" value="Reiniciar"&gt;<br>
+&lt;button type="button"&gt;Botón Personalizado&lt;/button&gt;</code></pre>
+
+    <h2>Listas Desplegables y Casillas de Verificación</h2>
+    <p>Estos elementos permiten seleccionar opciones:</p>
+    <ul>
+        <li><code>&lt;select&gt;</code>: Crea una lista desplegable para seleccionar una opción.</li>
+        <li><code>&lt;input type="checkbox"&gt;</code>: Crea casillas de verificación que permiten seleccionar múltiples opciones.</li>
+    </ul>
+    <pre><code>&lt;select name="opcion"&gt;<br>
+    &lt;option value="opcion1"&gt;Opción 1&lt;/option&gt;<br>
+    &lt;option value="opcion2"&gt;Opción 2&lt;/option&gt;<br>
+&lt;/select&gt;<br>
+&lt;input type="checkbox" name="opcion1"&gt; Opción 1<br>
+&lt;input type="checkbox" name="opcion2"&gt; Opción 2</code></pre>
+
+    <h2>Validación de Formularios</h2>
+    <p>La validación de formularios se utiliza para verificar los datos ingresados antes de enviarlos. Esto se puede hacer utilizando atributos HTML como <code>required</code> y <code>pattern</code>, o mediante JavaScript para una validación más avanzada.</p>
+    <pre><code>&lt;input type="text" name="email" required&gt;<br>
+&lt;input type="text" name="telefono" pattern="[0-9]{10}" title="Debe tener 10 dígitos"&gt;</code></pre>
+
+</body>
+</html>

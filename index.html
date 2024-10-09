@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <ul class="navbar">
+        <li class="logo"><img src="html5.png" alt="Logo"></li> <!-- Logo a la izquierda -->
+        <div class="menu"> <!-- Contenedor para los elementos del menú -->
+            <a href="htmlPag.html" class="menu-item">HTML</a>
+            <a href="cssPag.html" class="menu-item">CSS</a>
+        </div>
+        
+        <div class="wave"></div>
+    </ul>
+
+    <div class="container"> <!-- Contenedor para permitir desplazamiento -->
+        <div class="section" style="height: 700px;"> <!-- Altura específica para la primera sección -->
+            <div class="texto">
+                <h1 style="color:#A7ABC8; font-size: 60px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">HTML</h1>
+                <p style="color: #A7ABC8; font-size: 20px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
+                    El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza<br>
+                    para estructurar y desplegar una página web y sus contenidos.<br>
+                    Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o <br>
+                    imágenes y tablas de datos.
+                </p>
+            </div>
+            <div class="code-container">
+                <h2>HTML Ejemplo:</h2>
+                <pre><code>          
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Página de Ejemplo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;¡Bienvenido a mi página!&lt;/h1&gt;
+&lt;p&gt;Este es un ejemplo básico 
+de una página web con HTML.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div class="section" style="height: 700px;"> <!-- Altura específica para la segunda sección -->
+            <div class="texto">
+                <h1 style="color:#A7ABC8; font-size: 50px; ">CSS</h1>
+                <p style="color: #A7ABC8; font-size: 20px;">
+                    Es una función que se agrega a HTML que proporciona tanto a los desarrolladores de<br>
+                    sitios Web, así como a los usuarios, más control sobre cómo se muestran las páginas.<br>
+                    Con CSS, los diseñadores y los usuarios pueden crear hojas de estilo que definen<br>
+                    cómo aparecen los diferentes elementos, como los encabezados y los enlaces. Estas<br>
+                    hojas de estilo se pueden aplicar a cualquier página Web, y nos permite optimizarla<br>
+                    para mejorar su posicionamiento.
+                </p>
+            </div>
+            <div class="code-containerCSS">
+                <h2>CSS Ejemplo:</h2>
+                <pre><code>          
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  color: darkgray;
+}
+                </code></pre>
+            </div>
+        </div>
+
+        <div class="section" style="height: 700px;"> <!-- Sección para la lista de reproducción de videos -->
+            <div class="video-container">
+                <h2>Lista de Reproducción Tutoriales</h2>
+                <p style="color: #A7ABC8; font-size: 20px;">
+                    Aprende más sobre HTML y CSS viendo nuestra lista de reproducción de tutoriales.
+                </p>
+                <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/videoseries?list=PLPl81lqbj-4LKo66cEts5yC_AjOvqKptm" 
+                        title="Lista de Reproducción HTML y CSS" frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Sección para los creadores de la página -->
+        <div class="section" style="height: 400px; background-color: #1B1938;"> 
+            <h2 style="color:#A7ABC8; text-align: center; font-size: 40px;">Creado por: </h2>
+            <p style="color: #A7ABC8; text-align: center; font-size: 30px;">
+                
+                <br> Mayte Lucena Petatan | L20520331@chilpancingo.tecnm.mx
+                <br> Hander Emir Rendón Pérez | L20520374@chilpancingo.tecnm.mx
+
+            </p>
+        </div>
+
+    </div> <!-- Fin del contenedor -->
+</body>
+
+</html>

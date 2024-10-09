@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Comentario" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta HTML &lt;audio></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        video {
+            grid-column: 1 / span 2;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .container {
+            margin-top: 50px;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        h1 {
+            background-color: #34495e;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-family: "Protest Guerrilla"
+        }
+
+        h2 {
+            font-family: "Playpen Sans", cursive;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+
+        h3 {
+            font-family: "Nanum Myeongjo";
+            font-weight: 400;
+            font-style: normal;
+            color: #968771;
+        }
+
+        p {
+            font-family: "Roboto Mono";
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: italic;
+        }
+        ol {
+            font-family: "Roboto Mono";
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: italic;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .example-section {
+            background-color: #1f4068;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .example-section h2 {
+            margin-bottom: 10px;
+        }
+
+        pre {
+            background-color: #0f3460;
+            padding: 15px;
+            border-radius: 5px;
+            color: #fcfbfa;
+        }
+
+        .run-button {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        body {
+    margin: 0;
+    background-color: #27264B;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Fondo del video detrás del contenido */
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #1B1938; /* Fondo oscuro */
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Espacio entre el logo y los elementos del menú */
+    align-items: center; /* Alinear verticalmente los elementos */
+    position: fixed; /* Mantener la barra de navegación en su lugar */
+    top: 0; /* Colocar la barra de navegación en la parte superior */
+    z-index: 1000; /* Asegurar que la barra esté por encima del contenido */
+}
+
+.logo {
+    margin-left: 10px; /* Ajuste de margen izquierdo para el logo */
+}
+
+.logo img {
+    height: 50px; /* Ajusta el tamaño del logo */
+}
+
+.menu {
+    display: flex;
+    margin-right: 10px; /* Ajuste de margen derecho para el menú */
+}
+
+.menu-item {
+    display: inline-block;
+    color: #A7ABC8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background-color: rgb(9, 0, 51);
+    color: white; /* Cambia el color al pasar el mouse */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 50px; /* Deja espacio para la barra de navegación */
+    overflow-y: auto; /* Evitar el scroll en el contenedor */
+    height: calc(100vh - 50px); /* Altura total menos la barra de navegación */
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    padding: 20px; /* Espaciado interno */
+    flex: 1; /* Ocupa el resto del espacio */
+    overflow-y: auto; /* Permitir desplazamiento si el contenido es largo */
+    background-color: #27264B; /* Color de fondo para el contenido principal */
+}
+    </style>
+</head>
+
+<body>
+
+
+    <ul class="navbar">
+        <li class="logo">
+        <a href="index.html">
+            <img src="html5.png" alt="Logo">
+        </a>
+
+        </li> <!-- Logo a la izquierda -->
+        <div class="menu"> <!-- Contenedor para los elementos del menú -->
+            <a href="htmlPag.html" class="menu-item">HTML</a>
+            <a href="cssPag.html" class="menu-item">CSS</a>
+        </div>
+
+        <div class="wave"></div>
+    </ul>
+
+    <video onloadstart="this.muted=true" autoplay loop>
+        <source src="https://videos.pexels.com/video-files/17564212/17564212-uhd_2560_1440_30fps.mp4">
+    </video>
+
+    <div class="container">
+        <h1>Etiqueta HTML &lt;audio&gt;</h1>
+
+        <div class="nav-buttons">
+            <a href="http://127.0.0.1:5500/Elementos.html">Anterior</a>
+            <a href="http://127.0.0.1:5500/b.html">Próximo</a>
+        </div>
+
+        <div class="example-section">
+            <h2>Ejemplo</h2>
+            <p>Reproducir un archivo de sonido:</p>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The audio element&lt;/h1&gt;
+
+&lt;p&gt;Click on the play button to play a sound:&lt;/p&gt;
+
+&lt;audio controls&gt;
+&lt;source src="horse.ogg" type="audio/ogg"&gt;
+&lt;source src="horse.mp3" type="audio/mpeg"&gt;
+Your browser does not support the audio element.
+&lt;audio&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <br>
+            <h3>Definición y uso</h3>
+            <p style="color: #c6ccd5;"> La &lt;audio&gt; etiqueta se utiliza para incrustar contenido de sonido en un documento, como música u otras transmisiones de audio.
+                <br>
+                <br>
+                La &lt;audio&gt; etiqueta contiene una o más &lt;source&gt; etiquetas con diferentes fuentes de audio. El navegador elegirá la primera fuente que admita.
+                <br>
+                <br>
+                El texto entre las etiquetas &lt;audio&gt; y &lt;audio&gt; solo se mostrará en navegadores que no admitan el &lt;audio&gt; elemento.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

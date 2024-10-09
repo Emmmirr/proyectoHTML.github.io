@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="htmlPag.css"> <!-- Archivo específico -->
+</head>
+
+<body>
+
+    <ul class="navbar">
+        <li class="logo">
+        <a href="index.html">
+            <img src="html5.png" alt="Logo">
+        </a>
+
+        </li> <!-- Logo a la izquierda -->
+        <div class="menu"> <!-- Contenedor para los elementos del menú -->
+            <a href="htmlPag.html" class="menu-item">HTML</a>
+            <a href="cssPag.html" class="menu-item">CSS</a>
+        </div>
+
+        <div class="wave"></div>
+    </ul>
+
+    <div class="container">
+        <ul class="vertical-menu">
+            <li class="active">
+                <a href="#" class="load-content" data-file="css_basico.html">Introducción a CSS</a>
+
+            </li>
+            <li class="active">
+                <a href="#" class="load-content" data-file="css_colores_fondos.html">Colores y Fondos</a>
+
+            </li>
+            <li class="active">
+                <a href="#" class="load-content" data-file="css_fuentes_textos.html">Fuentes y Textos</a>
+
+            </li>
+            <li class="active">
+                <a href="#" class="load-content" data-file="css_layout.html">Diseño y Layout</a>
+
+            </li>
+            <li class="active">
+                <a href="#" class="load-content" data-file="css_multimedia.html">Multimedia y Animaciones</a>
+
+            </li>
+            <li class="active">
+                <a href="#" class="load-content" data-file="css_avanzado.html">CSS Avanzado</a>
+
+            </li>
+            
+  
+        </ul>
+
+        <div class="main-content">
+            <div class="section" id="html-Introduccion">
+
+                <div id="content-area">
+                    <!-- El contenido del archivo se cargará aquí -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Script para cargar contenido dinámicamente
+        document.querySelectorAll('.load-content').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const file = item.getAttribute('data-file');
+
+                fetch(file)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Error en la carga del archivo: ' + response.statusText);
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        document.getElementById('content-area').innerHTML = data;
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            });
+        });
+
+            // Cargar el contenido del primer elemento al cargar la página
+    document.addEventListener('DOMContentLoaded', () => {
+        const firstItem = document.querySelector('.load-content');
+        if (firstItem) {
+            firstItem.click(); // Simula un clic en el primer elemento para cargar su contenido
+        }
+    });
+    </script>
+
+</body>
+
+</html>
